@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CucumberSuite" parallel="tests" thread-count="3">
+   <test name="ChromeTests">
+            <parameter name="browser" value="chrome"/>
+        	<parameter name="runMode" value="LOCAL"/> !<!-- Possible values for this variable is either LOCAL or GRID-->
+        <classes>
+            <class name="UI.Runner.SmokeRun"/>
+        </classes>
+    </test>
+
+   <test name="EdgeTests">
+            <parameter name="browser" value="edge"/>
+        	<parameter name="runMode" value="LOCAL"/> !<!-- Possible values for this variable is either LOCAL or GRID-->
+        <classes>
+            <class name="UI.Runner.SmokeRun"/>
+        </classes>
+    </test>
+
+
+
+</suite> <!-- Suite -->

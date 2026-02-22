@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [CucumberSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="EdgeTests(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="runMode" value="LOCAL"/>
+    <classes>
+      <class name="UI.Runner.SmokeRun">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setup"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- UI.Runner.SmokeRun -->
+    </classes>
+  </test> <!-- EdgeTests(failed) -->
+</suite> <!-- Failed suite [CucumberSuite] -->
